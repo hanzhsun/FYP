@@ -1,35 +1,47 @@
 \documentclass{article}
 \providecommand{\tightlist}{
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=cyan}
+\graphicspath{ {./images/} }
 \title{Title}
 \author{Author}
 \date{\today}
-
 \begin{document}
-
 \maketitle
 \tableofcontents
 \newpage
-\section{Introduction}
 {
 It is the default class for composing an article.
 }
+
 \section{Template Overview}
+
 {
-This is a simple template produced by the package \textit{article}.
+This is a simple template produced by the package \emph{article}.
 }
+
 \subsection{Template Style}
+
 {
 default:
 
 \begin{itemize}
-\tightlist
 \item
-font family: roman
+  font family: roman
 \item
-font size: 10pt
+  font size: 10pt
 \end{itemize}
 }
+
+\begin{table}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}\hline
+1&&&&&&&\\\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}\cline{8-8}
+&&&&&&&\\\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}\cline{8-8}
+\end{tabular}
+\end{table}
 
 \end{document}
